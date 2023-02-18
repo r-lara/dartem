@@ -39,6 +39,9 @@ export default function Home() {
           </div>
         </div>
 
+        <button className="text-3xl bg-white font-bold text-gray-900 hover:text-white hover:bg-gray-900">
+          Hello world!
+        </button>
         <div className={styles.center}>
           <Image
             className={styles.logo}
