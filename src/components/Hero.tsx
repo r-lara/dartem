@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import useDarkMode from '@/hooks/useDarkMode';
+import Image from 'next/image';
 
 const navigation = [
   { name: 'Who we are', href: '#' },
@@ -56,7 +57,7 @@ export default function Hero() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Dartem</span>
-              <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600" alt="" />
+              <Image height='32' width='32' className="h-8 w-8" src="/images/logo-red.png" alt="logo" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -137,13 +138,7 @@ export default function Hero() {
               </div>
             </div>
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-gray-100">
-                Data to enrich your online business
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua.
-              </p>
+              <img className='mx-auto object-contain max-h-52 w-auto' src="/images/logoname-white.png" alt="dartem" />
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="#"

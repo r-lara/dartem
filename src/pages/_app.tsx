@@ -15,19 +15,19 @@ export default function App({ Component, pageProps }: AppProps) {
       {/* https://ahrefs.com/blog/open-graph-meta-tags/ */}
       <meta property="og:title" content={TITLE} key="title" />
       <meta property="og:description" content={DESC} />
-      <meta property="og:image" content="/favicon-dark.png" key="logo" />
+      <meta property="og:image" content="/images/logo-red.png" key="logo" />
       <meta property="og:url" content="/" key="logo" />
 
       <link
         rel="icon"
         type="image/ico"
-        href="favicon.ico"
+        href="images/favicon-black.png"
         media="(prefers-color-scheme: light)"
       />
       <link
         rel="icon"
         type="image/png"
-        href="favicon-dark.png"
+        href="images/favicon-dark-red.png"
         media="(prefers-color-scheme: dark)"
       />
     </Head>
